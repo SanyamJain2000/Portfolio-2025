@@ -1,0 +1,350 @@
+:root {
+  --primary-purple: #6A1B9A;  /* Lighter purple */
+  --dark-purple: #4A148C;     /* Darker purple */
+  --light-purple: #F3E5F5;
+  --accent-pink: #FF80AB;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+  color: #4A4A4A;
+  overflow-x: hidden;
+}
+
+/* --- NAVIGATION --- */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: none; /* Ensure no background panel */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: none; /* No background behind the buttons */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-button {
+  background: var(--primary-purple);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transform: rotate(5deg);
+  transition: all 0.3s ease;
+  /* Remove or reduce the box-shadow if it looks like a panel */
+  box-shadow: none; 
+  text-align: center;
+  border: none;
+}
+
+.nav-button:hover {
+  transform: rotate(0deg) scale(1.1);
+  background: var(--dark-purple);
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* --- HOME SECTION --- */
+.split-screen {
+  display: flex;
+  min-height: 100vh;
+  padding: 2rem;
+  margin-right: 180px;
+}
+
+.profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(106,27,154,0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.profile-card:hover .profile-hover {
+  opacity: 1;
+}
+
+.bio-container {
+  flex: 1;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(234, 204, 248, 0.9) 0%, rgba(206, 147, 216, 0.9) 100%);
+  border-radius: 20px;
+  margin-left: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bio-title {
+  font-size: 3rem;
+  color: var(--dark-purple);
+  margin-bottom: 1rem;
+}
+
+.bio-subtitle {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+  margin-bottom: 2rem;
+}
+
+.bio-content {
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.bio-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bio-content li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.bio-content li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-pink);
+}
+
+.bio-details a {
+  color: var(--dark-purple);
+  text-decoration: none;
+}
+
+.bio-details a:hover {
+  text-decoration: underline;
+}
+
+/* --- DOWNLOAD BUTTON --- */
+.download-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--primary-purple);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  box-shadow: 0 4px 15px rgba(106,27,154,0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(106,27,154,0.4);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* --- JOURNEY SECTIONS --- */
+.journey-section {
+  padding: 3rem 2rem;
+  position: relative;
+  /* Lighter purple gradient */
+  background: linear-gradient(135deg, #dbbdf2 0%, #aa69db 100%);
+  color: #fff;
+  min-height: 60vh;
+  margin-right: 0; 
+}
+
+.alternate-bg {
+  /* Reverse the colors for a subtle difference */
+  background: linear-gradient(135deg, #C59AE5 0%, #EADCF5 100%);
+}
+
+.journey-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.journey-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* --- INDIVIDUAL ITEM CARDS --- */
+.item-card {
+  background: rgba(255,255,255,0.8);
+  color: #000;
+  border-radius: 15px;
+  width: 300px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.item-card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.item-card-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* --- MODAL --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.modal-body h2 {
+  margin-top: 0;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  .split-screen {
+    flex-direction: column;
+    margin-right: 0; /* keep it removed on mobile as well */
+  }
+  
+  .side-nav {
+    position: static;
+    transform: none;
+    background: none;
+    margin: 1rem;
+  }
+  
+  .nav-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+  }
+  
+  .bio-container {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .journey-section {
+    margin-right: 0;
+  }
+
+  .item-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Glowing effect for current/important items */
+.glow-card {
+  /* Start with a bright glow */
+  box-shadow: 0 0 10px var(--accent-pink), 0 0 20px var(--accent-pink);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 4px var(--accent-pink), 0 0 8px var(--accent-pink);
+  }
+  100% {
+    box-shadow: 0 0 15px var(--accent-pink), 0 0 30px var(--accent-pink);
+  }
+}
