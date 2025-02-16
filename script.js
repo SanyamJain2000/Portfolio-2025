@@ -7,6 +7,7 @@ const resumeData = {
       title: "HCI Research Assistant",
       organization: "Insights Lab - Western University",
       date: "Sep 2023 – Present",
+      logo: "western.png",  // Update with your image path
       details: [
         "Conducted diverse user research for multiple HCI and info-visualization projects employing interviews, usability testing, and data analysis",
         "Partnered with cross-functional teams to integrate user insights into iterative development cycles",
@@ -18,6 +19,7 @@ const resumeData = {
       title: "Teaching Assistant",
       organization: "Western University",
       date: "Sep 2023 – Present",
+      logo: "western.png",  // Update with your image path
       details: [
         "Analysis of Algorithms (CS 3340B): Demonstrated algorithmic complexity impacts on user experience and performance",
         "Multimedia & Communications (1033A): Advised on interactive media design and usability",
@@ -30,6 +32,7 @@ const resumeData = {
       title: "Data & Product Experience Intern",
       organization: "Elite Techno Groups",
       date: "Jul 2021 – Sep 2021",
+      logo: "etl.jpeg",  // Update with your image path
       details: [
         "Developed JSON-based inventory system (30% faster retrieval)",
         "Utilized Matplotlib/Pandas/NumPy for bottleneck discovery",
@@ -40,6 +43,7 @@ const resumeData = {
       title: "Software Developer Intern",
       organization: "S.S.TECH",
       date: "Apr 2022 – Sep 2022",
+      logo: "sstech.png",  // Update with your image path
       details: [
         "Engineered web/Android app boosting checkout efficiency by 20%",
         "Enhanced communication devices with user-centric updates",
@@ -50,6 +54,7 @@ const resumeData = {
       title: "AAI Intern",
       organization: "Airports Authority of India",
       date: "Aug 2022 – Sep 2022",
+      logo: "aai.png",  // Update with your image path
       details: [
         "Explored AI-driven AMSS for real-time air traffic management",
         "Gained cross-functional insight into mission-critical protocols"
@@ -60,6 +65,7 @@ const resumeData = {
     {
       title: "Adverse Event Reporting Interactive Visualization",
       date: "",
+      logo: "image3.png",  // Update with your image path
       details: [
         "OpenFDA-based interface applying HCI principles",
         "Enhanced data presentation and user clarity"
@@ -69,6 +75,7 @@ const resumeData = {
     {
       title: "Ayurvedic Solutions for All Diseases",
       date: "",
+      logo: "ayurvedic_solutions_logo.png",  // Update with your image path
       details: [
         "Real-time web recommendation system with Logistic Regression",
         "PHP/SQL backend for personalized health advice"
@@ -77,6 +84,7 @@ const resumeData = {
     {
       title: "Public News App",
       date: "",
+      logo: "public_news_logo.png",  // Update with your image path
       details: [
         "OpenCV/SQL app for location-based news",
         "Optimized UI and queries for smoother experience"
@@ -85,6 +93,7 @@ const resumeData = {
     {
       title: "Android Controlled Night Vision Camera",
       date: "",
+      logo: "night_vision_logo.png",  // Update with your image path
       details: [
         "24/7 remote surveillance system",
         "Stable connectivity with real-time controls"
@@ -94,27 +103,32 @@ const resumeData = {
   publications: [
     {
       title: "ENVISION OpenFDA Adverse Drug Events Database Exploratory Interactive Visualization",
-      date: "2025"
+      date: "2025",
+      logo: "envision_logo.png"  // Update with your image path
     },
     {
       title: "Time-Varying Frequency Estimation of Narrow Band Signals",
       isbn: "978-81-954164-4-8",
-      date: "2023"
+      date: "2023",
+      logo: "frequency_estimation_logo.png"  // Update with your image path
     },
     {
       title: "Semantic Parser Using a Sequence-to-Sequence RNN Model to Generate Logical Forms",
       doi: "10.1007/978-981-19-8563-8_27",
-      date: "2023"
+      date: "2023",
+      logo: "semantic_parser_logo.png"  // Update with your image path
     },
     {
       title: "Establishing Communication Between Neural Network Models",
       doi: "10.1007/978-981-19-8563-8",
-      date: "2024"
+      date: "2024",
+      logo: "communication_logo.png"  // Update with your image path
     },
     {
       title: "Design and Development of a Solar-Based Wireless Electric Vehicle Charging System",
       doi: "10.1007/978-981-99-6749-0_32",
-      date: "2024"
+      date: "2024",
+      logo: "solar_ev_logo.png"  // Update with your image path
     }
   ],
   skills: [
@@ -136,52 +150,61 @@ const resumeData = {
       degree: "M.Sc Computer Science (Thesis in HCI)",
       university: "University of Western Ontario",
       gpa: "3.7",
-      date: "2023 – 2025"
+      date: "2023 – 2025",
+      logo: "western_uni_logo.png"  // Update with your image path
     },
     {
       degree: "B.Tech in Electrical Engineering",
       university: "Guru Gobind Singh Indraprastha University",
       gpa: "3.6",
-      date: "2019 – 2023"
+      date: "2019 – 2023",
+      logo: "ggsiu_logo.png"  // Update with your image path
     }
   ],
   volunteer: [
     {
       role: "Vice-President",
       organization: "Computer Society of India, MAIT",
-      date: "2022"
+      date: "2022",
+      logo: "csi_logo.png"  // Update with your image path
     },
     {
       role: "Social Volunteer",
       organization: "Rotaract Club of Rohini",
-      date: "2021"
+      date: "2021",
+      logo: "rotaract_logo.png"  // Update with your image path
     }
   ],
   certifications: [
     {
       title: "Human-Computer Interaction",
       issuer: "Western University",
-      date: "2024"
+      date: "2024",
+      logo: "hci_cert_logo.png"  // Update with your image path
     },
     {
       title: "Google Data Analytics",
       issuer: "Google",
-      date: "2024"
+      date: "2024",
+      logo: "google_data_logo.png"  // Update with your image path
     },
     {
       title: "Machine Learning & Deep Learning",
       issuer: "Udemy",
-      date: "2023"
+      date: "2023",
+      logo: "ml_dl_logo.png"  // Update with your image path
     },
     {
       title: "Java Level 1 & 2",
       issuer: "Cambridge Certification Authority",
-      date: "2023"
+      date: "2023",
+      logo: "java_cert_logo.png"  // Update with your image path
     },
     {
       title: "Microsoft Technology Associate",
       issuer: "Microsoft",
-      date: "2024"
+      date: "2024",
+      logo: "microsoft_logo.png"  // Update with your image path
     }
   ]
 };
@@ -204,9 +227,11 @@ function createItemCard(item, sectionKey) {
     card.classList.add('glow-card');
   }
 
-  // Placeholder image/icon (replace 'placeholder.jpg' with your actual image if available)
+  // Create image element using item.logo if available
   const img = document.createElement('img');
-  img.src = 'western.png'; 
+  // If your images are in a specific folder, adjust the path accordingly:
+  // e.g., img.src = item.logo ? `images/${item.logo}` : 'images/default-logo.png';
+  img.src = item.logo ? item.logo : 'default-logo.png';
   img.alt = item.title || item.role || item.degree || sectionKey;
   card.appendChild(img);
 
@@ -292,9 +317,8 @@ function showItemModal(item, sectionKey) {
     contentHTML += '</ul>';
   }
 
-  // Skills category
+  // Skills category (for skills section)
   if (item.category && item.items) {
-    // For a skills object
     contentHTML += `<h3>${item.category}</h3>`;
     contentHTML += '<ul>';
     item.items.forEach(skill => {
@@ -303,7 +327,7 @@ function showItemModal(item, sectionKey) {
     contentHTML += '</ul>';
   }
 
-  // Insert into modal
+  // Insert content into modal and display it
   document.querySelector('.modal-body').innerHTML = contentHTML;
   document.querySelector('.modal-overlay').style.display = 'flex';
 }
@@ -315,17 +339,13 @@ function populateSection(sectionId, dataKey) {
   const container = document.getElementById(`${sectionId}-content`);
   if (!container) return;
   
-  // If it's 'skills', data is an array of objects with category, items
-  // We can either list them individually or treat them as a single set
-  // For consistency, treat each object as a single "item" for now.
+  // For skills, treat each skills category as an item
   if (dataKey === 'skills') {
     resumeData.skills.forEach((skillObj) => {
-      // skillObj has shape { category: "...", items: [...] }
       const card = createItemCard(skillObj, dataKey);
       container.appendChild(card);
     });
   } else {
-    // Otherwise, standard array of items
     resumeData[dataKey].forEach((item) => {
       const card = createItemCard(item, dataKey);
       container.appendChild(card);
@@ -346,7 +366,7 @@ document.addEventListener("DOMContentLoaded", () => {
   populateSection('certifications', 'certifications');
   populateSection('volunteer', 'volunteer');
 
-  // Close modal
+  // Modal close functionality
   const modalOverlay = document.querySelector('.modal-overlay');
   const modalClose = document.querySelector('.modal-close');
   
@@ -360,7 +380,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Smooth scroll for nav buttons
+  // Smooth scroll for navigation buttons
   document.querySelectorAll('.nav-button').forEach(btn => {
     btn.addEventListener('click', (event) => {
       event.preventDefault();
