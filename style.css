@@ -21,7 +21,7 @@ body {
   right: 20px;
   transform: translateY(-50%);
   z-index: 1000;
-  background: none; /* Ensure no background panel */
+  background: none;
   padding: 0;
   margin: 0;
 }
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background: none; /* No background behind the buttons */
+  background: none;
   margin: 0;
   padding: 0;
 }
@@ -43,8 +43,7 @@ body {
   text-decoration: none;
   transform: rotate(5deg);
   transition: all 0.3s ease;
-  /* Remove or reduce the box-shadow if it looks like a panel */
-  box-shadow: none; 
+  box-shadow: none;
   text-align: center;
   border: none;
 }
@@ -66,6 +65,7 @@ body {
 .profile-container {
   flex: 1;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -192,7 +192,6 @@ body {
 .journey-section {
   padding: 3rem 2rem;
   position: relative;
-  /* Lighter purple gradient */
   background: linear-gradient(135deg, #dbbdf2 0%, #aa69db 100%);
   color: #fff;
   min-height: 60vh;
@@ -200,7 +199,6 @@ body {
 }
 
 .alternate-bg {
-  /* Reverse the colors for a subtle difference */
   background: linear-gradient(135deg, #C59AE5 0%, #EADCF5 100%);
 }
 
@@ -298,11 +296,62 @@ body {
   margin-top: 0;
 }
 
+.portfolio-btn-container {
+  position: fixed;
+  top: 50px;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 2000;
+}
+
+
+.portfolio-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, var(--primary-purple), var(--accent-pink));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: portfolioPulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes portfolioPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* --- SKILL CARDS (Skills Section) --- */
+.skill-card {
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: none;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin: 0.3rem 0;
+}
+
 /* --- MEDIA QUERIES --- */
 @media (max-width: 768px) {
   .split-screen {
     flex-direction: column;
-    margin-right: 0; /* keep it removed on mobile as well */
+    margin-right: 0;
   }
   
   .side-nav {
@@ -335,7 +384,6 @@ body {
 
 /* Glowing effect for current/important items */
 .glow-card {
-  /* Start with a bright glow */
   box-shadow: 0 0 10px var(--accent-pink), 0 0 20px var(--accent-pink);
   animation: glow 2s infinite alternate;
 }
